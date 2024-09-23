@@ -21,7 +21,7 @@ function LoginPage() {
       const user = userCredential.user;
 
       if (user) {
-        if (user.emailVerified || auth.currentUser) {
+        if (user.emailVerified) {
           if (rememberMe) {
             localStorage.setItem('email', email);
           } else {
